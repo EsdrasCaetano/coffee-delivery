@@ -4,6 +4,7 @@ import { GloabalStyle } from './styles/global'
 import { BrowserRouter } from 'react-router-dom'
 
 import { Router } from './Routes'
+import { CartContextProvider } from './contexts/CartContext'
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
       <GloabalStyle />
       
       <BrowserRouter>
-        <Router />
+        <CartContextProvider>
+          <Router />
+        </CartContextProvider>
       </BrowserRouter>
     </ThemeProvider>
   )
