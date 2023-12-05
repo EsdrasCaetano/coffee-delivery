@@ -14,7 +14,7 @@ export const DetailsContainer = styled(SectionBaseStyle)`
     flex-direction: column;
 `
 
-export const ConfirmationSectionContainer = styled.section`
+export const ConfirmationSectionContainer = styled.form`
     display: flex;
     flex-direction: column;
     gap: .8rem;
